@@ -11,7 +11,7 @@ jobs:
           dotnet-version: 7.0.x
       - name: build
         run: dotnet build -f 
-        working-directory: ./app
+        working-directory: /app
       - name: test
         run: dotnet test
-        working-directory: ./app
+        working-directory: /app
