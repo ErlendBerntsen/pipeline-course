@@ -1,6 +1,10 @@
 name: build-n-test
 on: 
-  workflow_dispatch
+  workflow_dispatch:
+  push: 
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
 jobs: 
   build:
     runs-on: ubuntu-latest
